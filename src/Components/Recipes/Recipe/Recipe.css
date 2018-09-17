@@ -4,7 +4,6 @@
   max-height: 100vh;
   display: flex;
   justify-content: center;
-  font-family: 'Play', sans-serif;
   overflow-y: scroll;
 }
 
@@ -84,7 +83,15 @@
   .Recipe_Contain img {
     max-width: 100%;
   }
-  .Recipe_Contain h3, .Recipe_Contain h4 {
+  .Recipe_Contain h3,
+  .Recipe_Contain h4 {
     padding-left: 15px;
+  }
+  .Recipe_Contain h3 {
+    font-size: 1.2em;
+    width: 90vw;
+  }
+  .Recipe_Contain h4 {
+    font-size: 1em;
   }
 }

@@ -1,18 +1,17 @@
-import React from 'react';
+import React from "react";
 
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { HashRouter, Switch, Route } from "react-router-dom";
 
-import Home from './Components/Home/Home';
-import Recipes from './Components/Recipes/Recipe/Recipe';
-
+import Home from "./Components/Home/Home";
+import Recipes from "./Components/Recipes/Recipe/Recipe";
 
 const Routes = () => (
-  <BrowserRouter>
+  <HashRouter>
     <Switch>
       <Route exact path="/" component={Home} />
       <Route exact path="/recipes/:id" component={Recipes} />
     </Switch>
-  </BrowserRouter>
-)
+  </HashRouter>
+);
 
 export default Routes;
